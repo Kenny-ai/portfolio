@@ -35,12 +35,12 @@ export function ThemeSelector() {
 
   return (
     <div className="theme-selector order-3 flex w-full items-center justify-between gap-3 border-t border-line pt-3 min-[1101px]:w-auto min-[1101px]:border-0 min-[1101px]:pt-0">
-      <span className="hidden font-display text-[8px] tracking-[1.3px] text-muted min-[381px]:block min-[1101px]:hidden">APPEARANCE</span>
+      <span className="hidden font-display text-[0.75rem] tracking-[1.3px] text-muted md:block min-[1101px]:hidden">APPEARANCE</span>
       <div role="group" aria-label="Portfolio appearance" className="theme-options flex w-full rounded-full border border-line p-1 min-[381px]:w-auto">
         {themes.map(theme => {
           const Icon = icons[theme.id];
           return (
-            <button key={theme.id} type="button" aria-pressed={activeTheme === theme.id} aria-label={`${theme.label} theme`} title={theme.description} onClick={() => selectTheme(theme.id)} className="theme-option flex flex-1 items-center justify-center gap-1.5 rounded-full px-2.5 py-2 text-[10px] font-medium transition-colors md:px-3">
+            <button key={theme.id} type="button" aria-pressed={activeTheme === theme.id} aria-label={`${theme.label} theme`} title={theme.description} onClick={() => selectTheme(theme.id)} className="theme-option flex flex-1 items-center justify-center gap-1.5 rounded-full px-2 py-2 text-xs min-[381px]:text-sm font-medium transition-colors md:px-3">
               <Icon aria-hidden="true" className="size-3" strokeWidth={1.7} />
               {theme.label}
             </button>

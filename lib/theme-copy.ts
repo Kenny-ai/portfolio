@@ -6,7 +6,7 @@ const studio = {
   navContact: "Let’s talk",
   edition: "PORTFOLIO / VOL. 01",
   heroDescription:
-    "I build websites that make an impression.\nAnd the software that makes them work.",
+    "Websites, mobile apps, and backend systems.\nAbout five years of building and shipping products.",
   heroButton: "Explore my work",
   heroNote: "thoughtful design. serious engineering.",
   heroFooter: "GOOD ON THE SURFACE. SOLID UNDER THE HOOD.",
@@ -18,23 +18,23 @@ const studio = {
   workDescription:
     "A few things I’ve been working on.\nDifferent worlds. Thoughtful digital experiences.",
   workFootnote:
-    "Four different ideas. The same curiosity to build something useful.",
+    "Different ideas. The same curiosity to build something useful.",
   aboutArtLabel: "THE PERSON BEHIND THE PIXELS",
   aboutArtFirst: "CURIOUS BY DEFAULT.",
   aboutArtLast: "DEVELOPER BY CRAFT.",
   aboutCaption: "Always a work in progress. In the best way.",
   aboutEyebrow: "02 / A LITTLE ABOUT ME",
   aboutParagraph1:
-    "I’m a software developer who enjoys turning ideas into things people can use. Sometimes that’s a beautifully simple landing page. Sometimes it’s the complicated logic that makes everything behind it work.",
+    "I’m a software developer with about five years of experience building and shipping products. My work spans frontend interfaces, backend systems, REST and GraphQL APIs, and mobile apps. I’ve also explored blockchain through CertChain.",
   aboutParagraph2:
-    "For me, those are part of the same craft: understanding a problem, caring about the details, and building something that feels right.",
+    "At Inawo, I’m the Lead Product Engineer. I lead a product team of four, review pull requests, and make product decisions. I also independently built the Inawo mobile app with React Native, now available on iOS and Android.",
   contactEyebrow: "03 / YOUR NEXT GOOD IDEA",
   contactAside: "LET’S MAKE IT HAPPEN",
   contactDescription:
     "A landing page, a product, a problem worth solving.\nI’d love to hear what you’re thinking.",
   contactButton: "Let’s connect on LinkedIn",
   footer: "Made with intention. And a fair amount of code.",
-  projectDetails: "About project",
+  projectDetails: "Read case study",
   projectVisit: "Explore live project",
   artLabel: "WHERE IDEAS BECOME INTERFACES",
   artKicker: "IDEA TO REALITY",
@@ -53,7 +53,7 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
     navAbout: "Behind the build",
     navContact: "Connect",
     edition: "PORTFOLIO / BUILD 01",
-    heroDescription: "I build the experience and the systems\nthat power it.",
+    heroDescription: "Frontend. Backend. Mobile.\nAbout five years building products and systems.",
     heroButton: "Browse projects",
     heroNote: "considered interfaces. capable systems.",
     heroFooter: "INTERFACE → LOGIC → WORKING SOFTWARE",
@@ -63,7 +63,7 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
     focus3: "Details that hold up",
     workEyebrow: "01 / PROJECT DIRECTORY",
     workDescription:
-      "Four projects. Different problems.\nExplore the products behind the interfaces.",
+      "Different projects. Different problems.\nExplore the products behind the interfaces.",
     workFootnote:
       "Different domains. The same drive to turn a problem into working software.",
     aboutArtLabel: "THE DEVELOPER BEHIND THE BUILD",
@@ -72,16 +72,16 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
     aboutCaption: "Always learning. Always refining the approach.",
     aboutEyebrow: "02 / BEHIND THE BUILD",
     aboutParagraph1:
-      "I’m a software developer who enjoys both sides of a product: the interface people interact with and the logic that makes it work. I build landing pages and more complex software with the same attention to the problem at hand.",
+      "I’ve spent about five years building and shipping software across the frontend, backend, and mobile. My toolkit includes JavaScript, TypeScript, React, Next.js, Node.js, Python, MongoDB, and SQL, with experience building REST and GraphQL products.",
     aboutParagraph2:
-      "My approach is to understand the problem, work through the details, and connect the pieces into something people can use. The visual finish and the underlying engineering belong together.",
+      "I lead a four-person product team at Inawo, review pull requests, and make product decisions. Alongside that leadership work, I independently developed the React Native mobile app for iOS and Android. CertChain adds hands-on blockchain work to that mix.",
     contactEyebrow: "03 / START A CONVERSATION",
     contactAside: "LET’S WORK THROUGH IT",
     contactDescription:
       "A new interface, a product, a technical challenge.\nLet’s talk through what you want to build.",
     contactButton: "Discuss your project",
     footer: "Thoughtfully built. From the interface down.",
-    projectDetails: "Project overview",
+    projectDetails: "Explore the build",
     projectVisit: "Open live project",
     artLabel: "FROM THE INTERFACE TO THE ENGINE",
     artKicker: "INPUT TO OUTPUT",
@@ -96,7 +96,7 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
     navContact: "Say hello",
     edition: "PORTFOLIO / SPECTRUM 01",
     heroDescription:
-      "Expressive interfaces. Thoughtful interactions.\nSoftware with personality.",
+      "Ideas brought to life on web and mobile.\nAbout five years of building and shipping products.",
     heroButton: "Explore what’s possible",
     heroNote: "a little curiosity goes a long way.",
     heroFooter: "A SPARK OF AN IDEA. A WORLD OF POSSIBILITY.",
@@ -108,23 +108,23 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
     workDescription:
       "Learning, celebrations, and shared experiences.\nDifferent ideas, brought into focus.",
     workFootnote:
-      "Four different worlds, connected by the possibility of a good idea.",
+      "Different worlds, connected by the possibility of a good idea.",
     aboutArtLabel: "THE MIND BEHIND THE COLORS",
     aboutArtFirst: "CURIOSITY IN FULL COLOR.",
     aboutArtLast: "DEVELOPMENT AS A CRAFT.",
     aboutCaption: "There’s always another way to see it.",
     aboutEyebrow: "02 / THE CREATIVE SIDE",
     aboutParagraph1:
-      "I’m a software developer drawn to the space where creative ideas become useful experiences. I enjoy building an expressive landing page just as much as figuring out the complex software that supports it.",
+      "For about five years, I’ve been turning ideas into shipped products across web, mobile, and backend systems. I enjoy the visual expression of an interface and the systems behind it, from REST and GraphQL APIs to a React Native app.",
     aboutParagraph2:
-      "The aim is to make something feel right and work well. For me, that starts with understanding the problem and continues through the visual choices, interactions, and underlying logic.",
+      "At Inawo, I combine hands-on building with product leadership: leading a team of four, reviewing their work, and making product decisions. I also built the mobile app independently and shipped it to iOS and Android. My curiosity has taken me into blockchain with CertChain, too.",
     contactEyebrow: "03 / THE NEXT POSSIBILITY",
     contactAside: "LET’S GIVE IT FORM",
     contactDescription:
       "A small spark or a fully formed idea.\nLet’s see what we can bring to life.",
     contactButton: "Share your idea on LinkedIn",
     footer: "Made of ideas, intention, and a little code.",
-    projectDetails: "Take a closer look",
+    projectDetails: "Explore the story",
     projectVisit: "See it in the wild",
     artLabel: "WHERE IDEAS FIND THEIR COLOR",
     artKicker: "IMAGINE TO CREATE",

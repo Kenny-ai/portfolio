@@ -4,9 +4,9 @@
 @theme {
   --color-paper: #f4f2eb;
   --color-ink: #23231f;
-  --color-orange: #ee5b31;
+  --color-orange: #ad3718;
   --color-line: #d9d7ce;
-  --color-muted: #74746b;
+  --color-muted: #626259;
   --color-strip: #eae8df;
   --color-surface: #eeece4;
   --color-art: #e6e3d8;
@@ -15,6 +15,8 @@
   --color-preview-birthday: #e8d7c6;
   --color-preview-wedding: #d5ded3;
   --color-preview-social: #dcd5e4;
+  --color-preview-credentials: #d3e3e0;
+  --color-preview-space: #ced6e4;
   --font-sans: "DM Sans", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
@@ -35,8 +37,8 @@
 }
 @layer components {
   .wrap { @apply mx-auto w-full max-w-[1440px] px-[22px] md:px-7 lg:px-10 min-[1101px]:px-16; }
-  .eyebrow { @apply flex items-center gap-[9px] font-display text-[8px] font-medium tracking-[1.5px] md:text-[10px]; }
-  .button { @apply inline-flex items-center justify-between gap-[38px] rounded-[3px] bg-ink px-[19px] py-[14px] text-[11px] font-medium text-paper transition duration-200 hover:-translate-y-[3px] hover:bg-orange md:px-[22px] md:py-[17px] md:text-xs; }
+  .eyebrow { @apply flex items-center gap-[9px] font-display text-xs font-medium tracking-[1.5px]; }
+  .button { @apply inline-flex items-center justify-between gap-[38px] rounded-[3px] bg-ink px-[19px] py-[14px] text-sm font-medium text-paper transition duration-200 hover:-translate-y-[3px] hover:bg-orange md:px-[22px] md:py-[17px] md:text-sm; }
   .button > span[aria-hidden="true"] { @apply text-xl font-normal; }
   .section-title { @apply text-[39px] leading-[1.1] font-medium tracking-[-2px] md:text-5xl; }
   .serif { @apply font-serif font-normal italic; }
@@ -151,6 +153,8 @@
   --color-preview-birthday: #20271a;
   --color-preview-wedding: #142b24;
   --color-preview-social: #1d222c;
+  --color-preview-credentials: #132c27;
+  --color-preview-space: #172239;
   --font-sans: "Space Grotesk", sans-serif;
   --font-display: ui-monospace, SFMono-Regular, Menlo, monospace;
   --font-serif: "Space Grotesk", sans-serif;
@@ -170,6 +174,8 @@
   --color-preview-birthday: #3e243f;
   --color-preview-wedding: #1e3541;
   --color-preview-social: #32264f;
+  --color-preview-credentials: #223448;
+  --color-preview-space: #29244a;
   --font-sans: "DM Sans", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --font-serif: "Space Grotesk", sans-serif;
@@ -279,3 +285,6 @@
 [data-theme="terminal"] .contact-section h2 { font-size: 46px; letter-spacing: -2px; }
 @media (min-width: 621px) { [data-theme="terminal"] .contact-section h2 { font-size: 70px; } }
 @media (min-width: 1101px) { [data-theme="terminal"] .contact-section h2 { font-size: 90px; } }
+
+/* Keep every sidebar section reachable in shorter desktop windows. */
+@media (max-height: 800px) { .case-study-sidebar { position: static; } }
