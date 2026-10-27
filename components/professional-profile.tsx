@@ -4,10 +4,10 @@ import { profile } from '@/lib/portfolio';
 
 export function ProfessionalProfile() {
   return (
-    <div className="wrap mt-14" aria-labelledby="profile-details-title">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line pt-7">
+    <div className="wrap mt-10 md:mt-12" aria-labelledby="profile-details-title">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <h3 id="profile-details-title" className="text-lg font-medium tracking-tight">The practical details</h3>
-        <span className="rounded-full border border-line px-3 py-1 text-[0.75rem] text-muted">{profile.experienceLabel}</span>
+
       </div>
       <div className="mt-7 grid gap-8 md:grid-cols-3">
         <section>

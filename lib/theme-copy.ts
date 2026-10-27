@@ -19,10 +19,6 @@ const studio = {
     "A few things I’ve been working on.\nDifferent worlds. Thoughtful digital experiences.",
   workFootnote:
     "Different ideas. The same curiosity to build something useful.",
-  aboutArtLabel: "THE PERSON BEHIND THE PIXELS",
-  aboutArtFirst: "CURIOUS BY DEFAULT.",
-  aboutArtLast: "DEVELOPER BY CRAFT.",
-  aboutCaption: "Always a work in progress. In the best way.",
   aboutEyebrow: "02 / A LITTLE ABOUT ME",
   aboutParagraph1:
     "I’m a software developer with about five years of experience building and shipping products. My work spans frontend interfaces, backend systems, REST and GraphQL APIs, and mobile apps. I’ve also explored blockchain through CertChain.",
@@ -66,10 +62,6 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
       "Different projects. Different problems.\nExplore the products behind the interfaces.",
     workFootnote:
       "Different domains. The same drive to turn a problem into working software.",
-    aboutArtLabel: "THE DEVELOPER BEHIND THE BUILD",
-    aboutArtFirst: "CURIOSITY AS INPUT.",
-    aboutArtLast: "SOFTWARE AS OUTPUT.",
-    aboutCaption: "Always learning. Always refining the approach.",
     aboutEyebrow: "02 / BEHIND THE BUILD",
     aboutParagraph1:
       "I’ve spent about five years building and shipping software across the frontend, backend, and mobile. My toolkit includes JavaScript, TypeScript, React, Next.js, Node.js, Python, MongoDB, and SQL, with experience building REST and GraphQL products.",
@@ -109,10 +101,6 @@ export const themeCopy: Record<Theme, Record<CopyKey, string>> = {
       "Learning, celebrations, and shared experiences.\nDifferent ideas, brought into focus.",
     workFootnote:
       "Different worlds, connected by the possibility of a good idea.",
-    aboutArtLabel: "THE MIND BEHIND THE COLORS",
-    aboutArtFirst: "CURIOSITY IN FULL COLOR.",
-    aboutArtLast: "DEVELOPMENT AS A CRAFT.",
-    aboutCaption: "There’s always another way to see it.",
     aboutEyebrow: "02 / THE CREATIVE SIDE",
     aboutParagraph1:
       "For about five years, I’ve been turning ideas into shipped products across web, mobile, and backend systems. I enjoy the visual expression of an interface and the systems behind it, from REST and GraphQL APIs to a React Native app.",

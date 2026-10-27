@@ -201,7 +201,6 @@
 [data-theme="terminal"] .project-preview { border: 1px solid var(--color-line); border-radius: 2px; background-image: linear-gradient(135deg, #a4f67008, transparent 60%); }
 [data-theme="terminal"] .project-frame { border: 1px solid #54765b; border-bottom: none; border-radius: 2px 2px 0 0; }
 [data-theme="terminal"] .project-card:hover .project-preview { box-shadow: 0 0 0 1px var(--color-orange), 0 12px 36px #0003; }
-[data-theme="terminal"] .about-art { transform: none; border-style: dashed; background-image: linear-gradient(#a4f67009 1px, transparent 1px), linear-gradient(90deg, #a4f67009 1px, transparent 1px); background-size: 22px 22px; }
 [data-theme="terminal"] .canvas-grid { background-image: linear-gradient(#a4f67020 1px, transparent 1px), linear-gradient(90deg, #a4f67020 1px, transparent 1px); background-size: 20px 20px; }
 [data-theme="terminal"] .orbit { border-color: #5e925c55; border-radius: 10px; }
 [data-theme="terminal"] .mini-browser { transform: rotate(-2deg); background: #152119; border-color: #62875d; box-shadow: 6px 6px 0 #a4f6700d; border-radius: 3px; }
@@ -235,8 +234,6 @@
 [data-theme="prismatic"] .project-preview { border: 1px solid #c3a5f342; border-radius: 14px; background-image: radial-gradient(ellipse at 0% 0%, #c5a0ff28, transparent 65%), linear-gradient(145deg, #ffffff08, transparent 60%); }
 [data-theme="prismatic"] .project-frame { border: 1px solid #e4c8ff55; border-bottom: none; border-radius: 8px 8px 0 0; box-shadow: 0 12px 35px #0004; }
 [data-theme="prismatic"] .project-card:hover .project-preview { box-shadow: 0 8px 36px #be91ff20; border-color: #d8baff88; }
-[data-theme="prismatic"] .about-art { border-radius: 18px; background: radial-gradient(ellipse at 100% 0%, #70dbea20, transparent 65%), linear-gradient(145deg, #593d7160, #231c34); border-color: #cfafff55; box-shadow: inset 0 0 30px #c5a0ff09, 0 20px 70px #0002; }
-[data-theme="prismatic"] .about-art > div[aria-hidden] { filter: drop-shadow(0 0 25px #ce9cff55); color: #d9baff; }
 [data-theme="prismatic"] .creative-canvas::before { content: ""; position: absolute; inset: 15% 5%; background: radial-gradient(ellipse, #d695ff27, #6ce8f714 45%, transparent 70%); filter: blur(15px); }
 [data-theme="prismatic"] .canvas-grid { background-image: radial-gradient(#c5a0ff70 .7px, transparent .7px); }
 [data-theme="prismatic"] .orbit { border-color: #b9adff55; box-shadow: 0 0 15px #bca4ff08; }

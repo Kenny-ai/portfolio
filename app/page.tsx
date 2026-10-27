@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowDownLeft, ArrowDownRight, ArrowUp, ArrowUpRight, Asterisk, CornerDownRight, Undo2 } from 'lucide-react';
+import { ArrowDown, ArrowDownLeft, ArrowDownRight, ArrowUp, ArrowUpRight, Asterisk, CornerDownRight, CodeXml, Network, Smartphone, Undo2 } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { ProfessionalProfile } from '@/components/professional-profile';
 import { ContactOptions } from '@/components/contact-options';
@@ -11,9 +11,9 @@ import { Wordmark } from '@/components/wordmark';
 import { profile, projects } from '@/lib/portfolio';
 
 const capabilities = [
-  ['Websites & frontend', 'Interfaces built with HTML, CSS, JavaScript, TypeScript, React, and Next.js.'],
-  ['Backend systems & APIs', 'Node.js, Python, MongoDB, SQL, REST, and GraphQL products.'],
-  ['Mobile & product engineering', 'React Native apps, technical leadership, and product decisions.'],
+  { icon: CodeXml, name: 'Websites & frontend', description: 'Interfaces built with HTML, CSS, JavaScript, TypeScript, React, and Next.js.' },
+  { icon: Network, name: 'Backend systems & APIs', description: 'Node.js, Python, MongoDB, SQL, REST, and GraphQL products.' },
+  { icon: Smartphone, name: 'Mobile & product engineering', description: 'React Native apps, technical leadership, and product decisions.' },
 ];
 
 export default function Home() {
@@ -49,10 +49,28 @@ export default function Home() {
           <ProjectGrid />
           <div className="mt-[30px] flex items-start gap-[11px] text-[0.75rem] leading-[1.7] text-muted md:items-center md:text-[0.75rem]"><span className="text-xl text-orange"><CornerDownRight aria-hidden="true" size="1em" className="inline-block shrink-0" /></span><ThemeText copyKey="workFootnote" /></div>
         </section>
-        <section className="border-y border-line bg-surface py-[55px] md:py-[85px]" id="about">
-          <div className="wrap grid items-center gap-10 md:grid-cols-[.8fr_1fr] md:gap-[35px] lg:grid-cols-[.85fr_1fr] lg:gap-[60px] min-[1101px]:gap-[100px]">
-            <div className="mx-auto w-full max-w-[315px] pt-3 pr-2.5 md:max-w-none md:pt-[18px] md:pr-[14px]"><div className="about-art group relative aspect-[1.1] -rotate-4 border border-line bg-art p-[22px] md:aspect-[.85] md:p-[18px] lg:aspect-[1.05] lg:p-[25px]"><span className="eyebrow text-[0.75rem] tracking-[1px] md:text-[0.75rem] lg:text-[0.75rem]"><ThemeText copyKey="aboutArtLabel" /></span><div aria-hidden="true" className="absolute inset-x-0 top-[15px] bottom-0 grid place-items-center font-serif text-[200px] leading-none text-orange transition-transform duration-700 group-hover:rotate-90 md:top-[30px] md:text-[180px] lg:text-[220px] min-[1101px]:text-[250px]"><Asterisk aria-hidden="true" size="1em" strokeWidth={1.8} /></div><div className="absolute right-[22px] bottom-[22px] left-[22px] text-[0.75rem] leading-[1.6] tracking-[1px] md:right-[18px] md:bottom-5 md:left-[18px] md:text-[0.75rem] lg:right-[25px] lg:bottom-[25px] lg:left-[25px] lg:text-[0.75rem]"><ThemeText copyKey="aboutArtFirst" /><br /><ThemeText copyKey="aboutArtLast" /><span className="absolute right-0 bottom-0 text-[34px]"><ArrowUpRight aria-hidden="true" size="1em" className="inline-block shrink-0" /></span></div></div><p className="mt-7 text-center font-serif text-sm text-muted italic"><ThemeText copyKey="aboutCaption" /></p></div>
-            <div><p className="eyebrow"><ThemeText copyKey="aboutEyebrow" /></p><h2 className="section-title mt-[22px] mb-[22px] text-[37px] md:text-[31px] lg:text-[36px] min-[1101px]:text-[40px]"><ThemeHeadline section="about" /></h2><p className="max-w-[440px] text-sm leading-[1.9] text-muted"><ThemeText copyKey="aboutParagraph1" /></p><p className="mt-3 max-w-[440px] text-sm leading-[1.9] text-muted"><ThemeText copyKey="aboutParagraph2" /></p><div className="mt-[27px]">{capabilities.map(([name, description], i) => <div key={name} className="relative border-t border-line py-4 pl-[30px] md:pt-[14px] md:pb-3"><span className="absolute top-[17px] left-0 font-mono text-[0.75rem] text-muted">0{i + 1}</span><h3 className="mb-[5px] text-[0.875rem] font-medium md:text-xs">{name}</h3><p className="text-sm leading-normal text-muted">{description}</p></div>)}</div></div>
+        <section className="border-y border-line bg-surface py-14 md:py-20" id="about" aria-labelledby="about-title">
+          <div className="wrap">
+            <p className="eyebrow"><ThemeText copyKey="aboutEyebrow" /></p>
+            <div className="mt-6 grid gap-7 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+              <div>
+                <h2 id="about-title" className="section-title max-w-xl"><ThemeHeadline section="about" /></h2>
+                <p className="mt-6 inline-flex items-center gap-2 font-mono text-xs text-muted"><span aria-hidden="true" className="status-dot" />{profile.experienceLabel}</p>
+              </div>
+              <div className="max-w-2xl space-y-4 text-sm leading-[1.9] text-muted">
+                <p><ThemeText copyKey="aboutParagraph1" /></p>
+                <p><ThemeText copyKey="aboutParagraph2" /></p>
+              </div>
+            </div>
+            <div className="mt-10 grid border-y border-line md:mt-12 md:grid-cols-3">
+              {capabilities.map(({ icon: Icon, name, description }, index) => (
+                <div key={name} className={`min-w-0 py-6 md:py-7 ${index > 0 ? 'border-t border-line md:border-t-0 md:border-l md:pl-6 lg:pl-8' : ''} ${index < capabilities.length - 1 ? 'md:pr-6 lg:pr-8' : ''}`}>
+                  <div className="mb-5 flex items-center justify-between"><Icon aria-hidden="true" className="size-5 text-orange" strokeWidth={1.5} /><span aria-hidden="true" className="font-mono text-xs text-muted">0{index + 1}</span></div>
+                  <h3 className="text-base font-medium tracking-tight">{name}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">{description}</p>
+                </div>
+              ))}
+            </div>
           </div>
           <ProfessionalProfile />
         </section>
