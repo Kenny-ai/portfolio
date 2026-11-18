@@ -5,6 +5,7 @@ export type CaseStudy = {
   roleLabel?: string;
   contributionHeading?: string;
   outcomesHeading?: string;
+  outcomesIntro?: string;
   references?: { label: string; url: string }[];
   role: string;
   headline: string;
@@ -103,33 +104,37 @@ export const caseStudies: Record<string, CaseStudy> = {
     "role": "Frontend developer",
     "contribution": [
       {
-        "title": "Customer-facing frontend development",
-        "description": "I worked as the project’s frontend developer, building parts of the web experience through which people use the birthday and gifting product."
+        "title": "Landing page image optimization",
+        "description": "I moved the landing page images to next/image to address the heaviest part of the page load."
       },
       {
-        "title": "Translating product intent into interfaces",
-        "description": "My contribution focused on the user-facing application: expressing product functionality through screens and interactions, and giving people a way to move through the experience."
+        "title": "Shared marketplace and onboarding UI",
+        "description": "I consolidated duplicate UI components used across marketplace and onboarding flows so both could use the same implementation."
       },
       {
-        "title": "Working across a connected product",
-        "description": "The product serves several related purposes. The frontend has to give birthday tracking and gifting a shared sense of direction while making individual tasks understandable."
+        "title": "Mobile marketplace performance",
+        "description": "I added lazy loading and code splitting to marketplace listing pages so mobile visitors downloaded less code up front."
       },
       {
-        "title": "Frontend delivery in a wider application",
-        "description": "I contributed the frontend as part of the overall product. That involves looking beyond how a screen appears to how the user-facing experience relates to the functionality behind it."
+        "title": "Landing page social proof",
+        "description": "I worked with design and product to add testimonials, live usage stats, and ratings to the landing page."
       }
     ],
-    "technologies": [],
-    "challengeHeading": "The product challenge",
-    "challenge": "A personal reminder tool and a shopping experience have different interaction patterns. Bringing them together introduces a product-design problem: people should be able to remember someone’s birthday without unnecessary complexity, while still finding the gifting features when they are useful.",
-    "approachHeading": "Making the product understandable",
-    "approach": "My work centered on frontend implementation and the user-facing experience. The engineering priority is to translate a broad set of product capabilities into interfaces with a clear purpose. For a product like this, visual presentation and the relationship between tasks matter together: the interface is how a person understands what the product can do for them.",
-    "outcomes": [
-      "Frontend contributions to the live BirthdayBuz web product.",
-      "User-facing development for a platform combining birthday utility and gift discovery."
+    "technologies": [
+      "Next.js"
     ],
-    "headline": "Frontend engineering for a product built around remembering people.",
-    "summary": "Frontend development for a birthday and gifting platform, turning a product that combines everyday reminders and commerce into a user-facing web experience.",
+    "challengeHeading": "Improving the live frontend",
+    "challenge": "Heavy images slowed down the landing page, while duplicated components and upfront JavaScript added weight to marketplace and onboarding flows.",
+    "approachHeading": "How I got there",
+    "approach": "I moved the landing page images to next/image to address the heaviest part of the page load. I then consolidated duplicate UI components shared by the marketplace and onboarding flows, reducing code duplication and bundle size. On marketplace listing pages, I used lazy loading and code splitting so mobile visitors downloaded only the code they needed up front.",
+    "outcomes": [
+      "About 35% faster landing page load: average load time fell from 4.2s to 2.7s in Lighthouse measurements.",
+      "About 180 KB smaller JavaScript bundle and 20% less duplicate code after refactoring shared UI across marketplace and onboarding flows.",
+      "About 1.1s faster mobile Time to Interactive on marketplace listing pages after adding lazy loading and code splitting.",
+      "About 8% lift in landing page conversion. I contributed by building testimonials, live usage stats, and ratings with design and product."
+    ],
+    "headline": "A faster frontend for birthday reminders and gifting.",
+    "summary": "Frontend development for a birthday and gifting platform, with measurable improvements to page load, JavaScript bundle size, mobile interactivity, and landing page conversion.",
     "snapshot": [
       {
         "label": "My role",
@@ -145,27 +150,29 @@ export const caseStudies: Record<string, CaseStudy> = {
       }
     ],
     "focusAreas": [
-      "Frontend development",
-      "User-facing product work",
-      "Connected product journeys"
+      "Frontend performance",
+      "Shared UI components",
+      "Mobile interactivity",
+      "Conversion"
     ],
     "brief": "BirthdayBuz brings birthday tracking, reminders, wishlists, and gift discovery together. Its value depends on making several related tasks feel like one useful product: remembering a date, preparing for it, and finding a way to celebrate someone. I worked on the frontend, where those capabilities become an experience people can navigate and use.",
     "engineeringNotes": [
       {
-        "title": "A reminder is a starting point",
-        "description": "An upcoming birthday can lead to several next steps. The interface needs to make those possibilities understandable without turning a simple task into a complicated one."
+        "title": "Image weight on the landing page",
+        "description": "Images were the first target because they accounted for the heaviest part of the load."
       },
       {
-        "title": "Commerce needs clarity",
-        "description": "Moving from browsing to choosing a gift adds another layer of product behavior. The frontend is responsible for presenting that journey in a way people can follow."
+        "title": "Reuse across product flows",
+        "description": "Sharing components between the marketplace and onboarding reduced duplicated code and shrank the JavaScript bundle."
       },
       {
-        "title": "The interface carries the product story",
-        "description": "Product features become meaningful through the screens and interactions that expose them. Good frontend work helps people understand the relationship between those features."
+        "title": "Less JavaScript up front",
+        "description": "Splitting and deferring code on listings reduced the work mobile devices had to do before the page became interactive."
       }
     ],
-    "outcomesHeading": "What I delivered",
-    "takeaway": "I approach frontend work as product engineering: the interface needs to make the underlying functionality useful and understandable."
+    "outcomesHeading": "Results",
+    "takeaway": "I approach frontend work as product engineering: the interface needs to make the underlying functionality useful and understandable.",
+    "outcomesIntro": "Measurable improvements to the live product."
   },
   "inawo": {
     "draft": false,
